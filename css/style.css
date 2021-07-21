@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    margin: auto;
+    width: 90%;
+    max-width: 100rem;
+
+}
+header {
+    padding: 4rem 0;
+    background: url(../img/material.jpg);
+    resize: both;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header .logo {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+header .logo p {
+    font-weight: bold;
+    color:  #a9a9a9;
+}
+header .search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+header .search input {
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: #fcf8f8;
+    margin: 0 auto;
+    padding: 0 2rem;
+    border-radius: 2px;
+    border: none;
+    font-size: 1.6rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem
+}
+header .search label {
+    font-size: 1.6rem;
+}
+header .categories {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+header .categories a {
+    margin: 1rem 2rem;
+    color: rgba(0, 0, 0, 0.788);
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+header .categories a:hover {
+    color: rgb(57, 33, 85);
+}
+header .categories a.active {
+    color: black;
+}
+h1 {
+    font-family: 'Roboto Slab', serif;
+} 
+a:hover {
+    cursor: pointer;
+}
+.text-center {
+    text-align: center;
+    padding: 2rem;
+}
+.grid {
+    transition: opacity 0.8s linear 1s;
+    position: relative;
+    width: 100%;
+    opacity: 0;
+}
+/* grid */
+.grid.loaded-images {
+    opacity: 1;
+    
+}
+@media (min-width: 768px) {
+    .grid .item {
+        width: calc(50% - 20px);
+    }
+    header .search input {
+        width: 70%;
+    }
+}
+.grid .item {
+    position: absolute;
+    padding: 0;
+    margin: 10px;
+    height: 100%;
+    display: block;
+}   
+ 
+.grid .item-content {
+    position: relative;
+}
+.grid .item img {
+    width: 100%;
+    cursor: pointer;
+    vertical-align: top;
+}
+/* footer */
+footer .social-networks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+footer .social-networks a {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    transition: .3s ease all;
+}
+.twitter {
+    color: #1DA1F2;
+    font-size: 2.5rem;
+}
+.facebook {
+    color: #4267B2;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+.instagram {
+    font-size: 2.5rem;
+}
+.github {
+    font-size: 2.5rem;
+    color: #211f1f;
+} 
+footer .container-icon:hover a {
+    animation: icon .5s ease;
+}
+@keyframes icon {
+    from {
+        transform: rotate3D(0,0,0,0);
+    }
+    to {
+        transform: rotate3d(0,1,0,360deg);
+    }
+}
+.copyright {
+    margin-bottom: 4rem;
+    font-size: 1.5rem;
+}
+
+
